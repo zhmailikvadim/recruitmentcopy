@@ -186,7 +186,7 @@
                 <Annotation Term="Common.Text" Path="to_ComputerLevelVH/Description">
                     <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
                 </Annotation>
-                <Annotation Term="Common.ValueListWithFixedValues" Bool="false" />
+                <Annotation Term="Common.ValueListWithFixedValues" Bool="true" />
                 <Annotation Term="Common.ValueList">
                     <Record Type="Common.ValueListType">
                         <PropertyValue Property="CollectionPath" String="ZHR_I_COMPUTER_LEVEL_VH" />
@@ -198,10 +198,7 @@
                                 </Record>
                                 <Record Type="Common.ValueListParameterDisplayOnly">
                                     <PropertyValue Property="ValueListProperty" String="Description" />
-                                </Record>
-                                <Record Type="Common.ValueListParameterDisplayOnly">
-                                    <PropertyValue Property="ValueListProperty" String="description_long" />
-                                </Record>                                
+                                </Record>                               
                             </Collection>
                         </PropertyValue>
                     </Record>
@@ -371,7 +368,7 @@
                 <Annotation Term="Common.Text" Path="to_EducLanguVH/Description">
                     <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
                 </Annotation>
-                <Annotation Term="Common.ValueListWithFixedValues" Bool="true" />
+                <Annotation Term="Common.ValueListWithFixedValues" Bool="false" />
                 <Annotation Term="Common.ValueList">
                     <Record Type="Common.ValueListType">
                         <PropertyValue Property="Label" String="Уровень" />
@@ -383,6 +380,9 @@
                                     <PropertyValue Property="LocalDataProperty" PropertyPath="level_name" />
                                     <PropertyValue Property="ValueListProperty" String="Description" />
                                 </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="description_long" />
+                                </Record> 
                             </Collection>
                         </PropertyValue>
                     </Record>
@@ -859,22 +859,6 @@
                             </Collection>
                         </PropertyValue>
                         <PropertyValue Property="Label" String="Вакансии"/>
-                    </Record>
-                </Annotation>
-            </Annotations>
-            <Annotations Target="SAP.ZHR_C_CANDIDATEHEADER_CDS_Entities/ZHR_C_CANDIDATE_LANGUAGE">
-                <Annotation Term="com.sap.vocabularies.Common.v1.SideEffects" Qualifier="LevelChanged">
-                    <Record>
-                        <PropertyValue Property="SourceProperties">
-                            <Collection>
-                                <PropertyPath>level_name</PropertyPath>
-                            </Collection>
-                        </PropertyValue>
-                        <PropertyValue Property="TargetProperties">
-                            <Collection>
-                                <String>description_long</String>
-                            </Collection>
-                        </PropertyValue>
                     </Record>
                 </Annotation>
             </Annotations>
