@@ -704,9 +704,6 @@
                                     <PropertyValue Property="Value" Path="name_profess"/>
                                 </Record>
                                 <Record Type="UI.DataField">
-                                    <PropertyValue Property="Value" Path="comment_prof"/>
-                                </Record>
-                                <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="ready_study"/>
                                 </Record>
                                 <Record Type="UI.DataFieldWithUrl">
@@ -715,6 +712,9 @@
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="req_study_added"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="comment_prof"/>
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -739,11 +739,6 @@
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Label" String="Комментарий"/>
-                            <PropertyValue Property="Value" Path="comment_prof"/>
-                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
-                        </Record>
-                        <Record Type="UI.DataField">
                             <PropertyValue Property="Label" String="Готов обучаться"/>
                             <PropertyValue Property="Value" Path="ready_study"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
@@ -757,6 +752,11 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Label" String="Заявка на обучение создана"/>
                             <PropertyValue Property="Value" Path="req_study_added"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Комментарий"/>
+                            <PropertyValue Property="Value" Path="comment_prof"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
                         </Record>
                     </Collection>
@@ -1021,6 +1021,7 @@
                 <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Hidden"/>
                 <Annotation Term="UI.Hidden"/>
             </Annotations>
+            <Annotations Target="ZHR_C_CANDIDATEHEADER_CDS.ZHR_C_CANDIDATE_LANGUAGEType/description_long"/>
             <Annotations Target="ZHR_C_CANDIDATEHEADER_CDS.ZHR_C_CANDIDATE_LANGUAGEType">
                 <Annotation Term="UI.FieldGroup" Qualifier="LGN">
                     <Record>
@@ -1037,6 +1038,9 @@
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="level_name"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="description_long"/>
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -1073,6 +1077,11 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Label" String="Уровень владения"/>
                             <PropertyValue Property="Value" Path="level_name"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Описание уровня"/>
+                            <PropertyValue Property="Value" Path="description_long"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
                         </Record>
                     </Collection>
@@ -1231,6 +1240,9 @@
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="telnr"/>
                                 </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="agreement"/>
+                                </Record>
                             </Collection>
                         </PropertyValue>
                     </Record>
@@ -1261,6 +1273,11 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Label" String="Телефон"/>
                             <PropertyValue Property="Value" Path="telnr"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Только с согласия указанных лиц"/>
+                            <PropertyValue Property="Value" Path="agreement"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
                         </Record>
                     </Collection>
@@ -1350,11 +1367,6 @@
                 </Annotation>
                 <Annotation Term="UI.LineItem">
                     <Collection>
-                        <Record Type="UI.DataFieldForAction">
-                            <PropertyValue Property="Label" String="Скопировать свойственника в семью"/>
-                            <PropertyValue Property="Action" String="ZHR_C_CANDIDATEHEADER_CDS.ZHR_C_CANDIDATEHEADER_CDS_Entities/ZHR_C_CANDIDATE_RELATIVESCopy_to_family"/>
-                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated"/>
-                        </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="relat_degree"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
