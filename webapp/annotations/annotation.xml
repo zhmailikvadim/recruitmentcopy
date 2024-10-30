@@ -113,7 +113,7 @@
                         </Record>
 
                         <Record Type="UI.ReferenceFacet">
-                            <PropertyValue Property="Label" String="Вакансии" />
+                            <PropertyValue Property="Label" String="Вакансии(действующие)" />
                             <PropertyValue Property="Target" AnnotationPath="to_CandidateVacanc/@UI.LineItem" />
                             <PropertyValue Property="ID" String="VACAN" />
                         </Record>
@@ -567,7 +567,7 @@
 
             <Annotations Target="SAP.ZHR_C_CANDIDATEHEADERType/state_name">
                 <Annotation Term="Common.Text" Path="to_RegionVH/bezei">
-                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
                 </Annotation>
                 <Annotation Term="Common.ValueListWithFixedValues" Bool="false" />
                 <Annotation Term="Common.ValueList">
@@ -594,7 +594,7 @@
 
             <Annotations Target="SAP.ZHR_C_CANDIDATEHEADERType/statef_name">
                 <Annotation Term="Common.Text" Path="to_RegionFVH/bezei">
-                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
                 </Annotation>
                 <Annotation Term="Common.ValueListWithFixedValues" Bool="false" />
                 <Annotation Term="Common.ValueList">

@@ -100,7 +100,13 @@
       "@i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "uri": "i18n/i18n.properties"
-      }
+      },
+      "i18n|sap.suite.ui.generic.template.ObjectPage|ZHR_C_CANDIDATEHEADER": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+            "bundleName": "recruitmentcopy.i18n.ObjectPage.i18n"
+        }
+    }
     },
     "resources": {
       "css": []
